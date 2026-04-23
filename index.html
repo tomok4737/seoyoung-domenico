@@ -26,25 +26,36 @@
             color: #333;
         }
 
+        /* 메인 사진 영역 (하단 배치) */
         .main-header {
             position: relative;
             width: 100%;
-            height: 550px; 
+            height: 600px; 
             background-image: url('main.JPG'); 
             background-size: cover;
             background-position: center;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: flex-end;
             align-items: center;
-            color: #000;
-            font-weight: bold;
-            text-shadow: 2px 2px 4px rgba(255,255,255,0.8);
+            padding-bottom: 20px;
         }
-        .main-header h1 { font-size: 1.8rem; margin: 0; font-weight: bold; letter-spacing: 2px; }
-        .main-header .invite-text { font-size: 0.9rem; margin: 15px 0; letter-spacing: 3px; font-weight: bold; }
-        .main-header .date-location { font-size: 1.1rem; line-height: 1.6; font-weight: bold; }
-        .main-header .heart { color: #AC8E8E; margin-bottom: 5px; font-weight: bold; }
+
+        /* 글자 뒤 반투명 박스 */
+        .text-box {
+            background-color: rgba(255, 255, 255, 0.6);
+            padding: 20px;
+            border-radius: 20px;
+            width: 85%;
+            backdrop-filter: blur(8px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            color: #000;
+            box-sizing: border-box;
+        }
+        
+        .main-header h1 { font-size: 1.5rem; margin: 0; font-weight: bold; letter-spacing: 1px; }
+        .main-header .invite-text { font-size: 0.75rem; margin: 10px 0; letter-spacing: 2px; font-weight: bold; }
+        .main-header .date-location { font-size: 0.95rem; line-height: 1.5; font-weight: bold; margin: 0; }
 
         .content { padding: 40px 20px; }
         .section { margin-bottom: 50px; }
@@ -66,7 +77,7 @@
         .account-box { display: none; background: #faf8f8; padding: 15px; margin-top: 10px; border-radius: 10px; font-size: 0.9rem; text-align: left; border-left: 3px solid #AC8E8E; }
         .copy-btn { font-size: 0.7rem; background: #AC8E8E; color: #fff; border: none; padding: 3px 8px; border-radius: 4px; cursor: pointer; float: right; }
         
-        .map-thumb { width: 100%; height: 200px; background-color: #f0f0f0; border-radius: 10px; overflow: hidden; position: relative; margin-top: 10px; }
+        .map-thumb { width: 100%; height: 200px; border-radius: 10px; overflow: hidden; position: relative; margin-top: 10px; }
         .map-thumb img { width:100%; height:100%; object-fit:cover; }
     </style>
 </head>
@@ -74,13 +85,15 @@
 
 <div class="container">
     <div class="main-header">
-        <h1>SEOYOUNG & DOMENICO</h1>
-        <p class="invite-text">| SZERETETTEL MEGHÍVJUK ESKÜVŐNKRE |</p>
-        <div class="heart">❤️ 2026.05.30 ❤️</div>
-        <p class="date-location">
-            Szombat, 16:00 óra tol <br>
-            Öreg-Tölgy Kastély-Fogadó
-        </p>
+        <div class="text-box">
+            <h1>SEOYOUNG & DOMENICO</h1>
+            <p class="invite-text">| SZERETETTEL MEGHÍVJUK ESKÜVŐNKRE |</p>
+            <div style="color: #AC8E8E; margin-bottom: 5px; font-weight: bold;">❤️ 2026.05.30 ❤️</div>
+            <p class="date-location">
+                Szombat, 16:00 óra tol <br>
+                Öreg-Tölgy Kastély-Fogadó
+            </p>
+        </div>
     </div>
 
     <div class="content">
@@ -92,7 +105,7 @@
             
             <div style="margin-top: 40px; font-size: 1rem;">
                 <p><span style="font-size: 0.8rem; opacity: 0.7;">Lim Seoyeon és Cho Kyubaek lánya</span><br><strong>Seoyoung</strong></p>
-                <p><span style="font-size: 0.8rem; opacity: 0.7;">Orsholya és Silvio fia</span><br><strong>Domenico</strong></p>
+                <p><span style="font-size: 0.8rem; opacity: 0.7;">Orsolya és Silvio fia</span><br><strong>Domenico</strong></p>
             </div>
         </div>
 
@@ -101,6 +114,11 @@
             <p><strong>Öreg-Tölgy Kastély-Fogadó</strong><br>
             <span style="font-size: 0.9rem;">Pusztazámor, Kossuth Lajos u. 22, 2039</span></p>
             
+            <div style="background-color: #fdf8f8; padding: 15px; border-radius: 10px; margin: 20px 0; font-size: 0.85rem; color: #AC8E8E; border: 1px dashed #AC8E8E;">
+                🌿 <strong>Dress Code Tip</strong> 🌿<br>
+                A helyszín füves területe miatt javasoljuk a kényelmesebb lábbelik viselését a tűsarkú helyett.
+            </div>
+
             <a href="https://www.google.com/maps/place/Old+Oak+Tavern+Castle/@47.4046616,18.7875978,17z/data=!3m1!4b1!4m6!3m5!1s0x476a0a2bd56c1f8d:0x1ec93246de1d170a!8m2!3d47.4046616!4d18.7875978!16s%2Fg%2F11b7fvpn05?entry=ttu&g_ep=EgoyMDI2MDQyMC4wIKXMDSoASAFQAw%3D%3D" target="_blank">
                 <div class="map-thumb">
                     <img src="map.png" alt="Térkép">
@@ -111,21 +129,15 @@
             </a>
         </div>
 
-    
-
+      
         
-        </div>
 
         <div class="section">
             <p style="font-size: 0.9rem; opacity: 0.6;">Köszönjük!</p>
         </div>
     </div>
 </div>
-<div style="background-color: #fdf8f8; padding: 15px; border-radius: 10px; margin: 20px 0; font-size: 0.7rem; opacity: 0.6; color: #AC8E8E; border: 1px dashed #AC8E8E;">
-                🌿 <strong>Dress Code Tip</strong> 🌿<br>
-                식장이 잔디밭인 관계로 뾰족한 구두(스틸레토 힐)는 피해주시길 권장합니다!<br>
-                <span style="font-size: 0.7rem; opacity: 0.8;">(A helyszín füves területe miatt javasoljuk a kényelmesebb lábbelik viselését a tűsarkú helyett.)</span>
-            </div>
+
 <script>
     function toggleAccount() {
         var x = document.getElementById("account-area");
