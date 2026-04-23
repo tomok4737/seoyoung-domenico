@@ -4,17 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seoyoung & Domenico Esküvője</title>
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            background-color: #AC8E8E; /* 더스티 로즈 */
-            /* 헝가리어 폰트를 우선적으로 적용 */
-            font-family: 'Playfair Display', 'Nanum Myeongjo', serif;
+            background-color: #AC8E8E; /* 배경색: 더스티 로즈 */
+            font-family: 'Montserrat', sans-serif; /* 폰트 통일 */
             margin: 0;
             padding: 20px 10px;
             display: flex;
             justify-content: center;
-            line-height: 1.8;
+            line-height: 1.5; /* 줄 간격을 줄여서 박스를 날씬하게 */
         }
         .container {
             max-width: 450px;
@@ -39,42 +38,30 @@
             flex-direction: column;
             justify-content: flex-end;
             align-items: center;
-            padding-bottom: 15px; /* 박스를 더 하단으로 내림 */
+            padding-bottom: 15px; /* 박스를 아래쪽에 바짝 붙임 */
         }
 
-        /* 글자 뒤 반투명 박스 */
+        /* 글자 뒤 반투명 박스 (슬림 버전) */
         .text-box {
-            background-color: rgba(255, 255, 255, 0.65);
-            padding: 20px;
-            border-radius: 20px;
+            background-color: rgba(255, 255, 255, 0.7); /* 살짝 더 진하게 해서 글씨를 잘 보이게 */
+            padding: 15px 10px; /* 위아래 여백을 확 줄여서 높이를 낮춤 */
+            border-radius: 15px;
             width: 85%;
-            backdrop-filter: blur(8px);
+            backdrop-filter: blur(5px);
             box-shadow: 0 4px 15px rgba(0,0,0,0.1);
             color: #000;
             box-sizing: border-box;
         }
         
-        .main-header h1 { font-size: 1.5rem; margin: 0; font-weight: bold; letter-spacing: 1px; }
-        .main-header .invite-text { font-size: 0.75rem; margin: 10px 0; letter-spacing: 2px; font-weight: bold; }
-        .main-header .date-location { font-size: 0.95rem; line-height: 1.5; font-weight: bold; margin: 0; }
+        /* 박스 안 글자 크기 조절 (높이 줄이기) */
+        .main-header h1 { font-size: 1.3rem; margin: 0; font-weight: bold; letter-spacing: 1px; }
+        .main-header .invite-text { font-size: 0.65rem; margin: 5px 0; letter-spacing: 1.5px; font-weight: bold; }
+        .main-header .date-location { font-size: 0.85rem; font-weight: bold; margin: 0; }
 
         .content { padding: 40px 20px; }
-        .section { margin-bottom: 50px; }
-        .section-title { font-weight: bold; font-size: 1.1rem; color: #AC8E8E; margin-bottom: 20px; border-bottom: 1px solid #f2eeee; display: inline-block; padding-bottom: 5px; }
+        .section { margin-bottom: 40px; }
+        .section-title { font-weight: bold; font-size: 1rem; color: #AC8E8E; margin-bottom: 15px; border-bottom: 1px solid #f2eeee; display: inline-block; padding-bottom: 5px; }
         
-        .btn {
-            background: #fff;
-            border: 1px solid #AC8E8E;
-            color: #AC8E8E;
-            padding: 10px 20px;
-            text-decoration: none;
-            display: inline-block;
-            margin: 5px;
-            border-radius: 8px;
-            cursor: pointer;
-            font-size: 0.85rem;
-        }
-
         .map-thumb { width: 100%; height: 200px; border-radius: 10px; overflow: hidden; position: relative; margin-top: 10px; }
         .map-thumb img { width:100%; height:100%; object-fit:cover; }
     </style>
@@ -86,7 +73,7 @@
         <div class="text-box">
             <h1>SEOYOUNG & DOMENICO</h1>
             <p class="invite-text">| SZERETETTEL MEGHÍVJUK ESKÜVŐNKRE |</p>
-            <div style="color: #AC8E8E; margin-bottom: 5px; font-weight: bold;">❤️ 2026.05.30 ❤️</div>
+            <div style="color: #AC8E8E; margin-bottom: 3px; font-size: 0.9rem;">❤️ 2026.05.30 ❤️</div>
             <p class="date-location">
                 Szombat, 16:00 óra<br>
                 Öreg-Tölgy Kastély-Fogadó
@@ -96,31 +83,31 @@
 
     <div class="content">
         <div class="section">
-            <p>Két különálló élet, két különböző szín,<br>
+            <p style="font-size: 0.9rem;">Két különálló élet, két különböző szín,<br>
             mely mostantól egy közös úton fonódik össze.<br>
             Hálásak lennénk, ha jelenlétükkel megtisztelnének minket,<br>
             és együtt ünnepelnénk közös életünk kezdetét.</p>
             
-            <div style="margin-top: 40px; font-size: 1rem;">
-                <p><span style="font-size: 0.8rem; opacity: 0.7;">Lim Seoyeon és Cho Kyubaek lánya</span><br><strong>Seoyoung</strong></p>
-                <p><span style="font-size: 0.8rem; opacity: 0.7;">Orsolya és Silvio fia</span><br><strong>Domenico</strong></p>
+            <div style="margin-top: 30px; font-size: 0.95rem;">
+                <p><span style="font-size: 0.75rem; opacity: 0.7;">Lim Seoyeon és Cho Kyubaek lánya</span><br><strong>Seoyoung</strong></p>
+                <p><span style="font-size: 0.75rem; opacity: 0.7;">Orsolya és Silvio fia</span><br><strong>Domenico</strong></p>
             </div>
         </div>
 
         <div class="section">
             <span class="section-title">HELYSZÍN</span><br>
             <p><strong>Öreg-Tölgy Kastély-Fogadó</strong><br>
-            <span style="font-size: 0.9rem;">Pusztazámor, Kossuth Lajos u. 22, 2039</span></p>
+            <span style="font-size: 0.85rem;">Pusztazámor, Kossuth Lajos u. 22, 2039</span></p>
             
-            <div style="background-color: #fdf8f8; padding: 15px; border-radius: 10px; margin: 20px 0; font-size: 0.85rem; color: #AC8E8E; border: 1px dashed #AC8E8E;">
+            <div style="background-color: #fdf8f8; padding: 12px; border-radius: 10px; margin: 15px 0; font-size: 0.8rem; color: #AC8E8E; border: 1px dashed #AC8E8E; line-height: 1.4;">
                 🌿 <strong>Dress Code Tip</strong> 🌿<br>
                 A helyszín füves területe miatt javasoljuk a kényelmesebb lábbelik viselését a tűsarkú helyett.
             </div>
 
-            <a href="https://www.google.com/maps/place/Old+Oak+Tavern+Castle/@47.4046616,18.7875978,17z/data=!3m1!4b1!4m6!3m5!1s0x476a0a2bd56c1f8d:0x1ec93246de1d170a!8m2!3d47.4046616!4d18.7875978!16s%2Fg%2F11b7fvpn05?entry=ttu&g_ep=EgoyMDI2MDQyMC4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+            <a href="https://maps.google.com" target="_blank">
                 <div class="map-thumb">
                     <img src="map.png" alt="Térkép">
-                    <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(172, 142, 142, 0.8); color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.8rem;">
+                    <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(172, 142, 142, 0.8); color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.75rem;">
                         Google Térkép megnyitása
                     </div>
                 </div>
@@ -128,7 +115,7 @@
         </div>
 
         <div class="section">
-            <p style="font-size: 0.9rem; opacity: 0.6;">Köszönjük!</p>
+            <p style="font-size: 0.85rem; opacity: 0.6;">Köszönjük!</p>
         </div>
     </div>
 </div>
